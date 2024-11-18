@@ -1,15 +1,81 @@
 <!DOCTYPE html>
-<html lang="CN-zh">
-    <head>
-        <link type="shortcut icon" herf="">
-        <meta charset="utf-8">
-        <title>HTML file</title>
-    </head>
-    <body>
-
-    </body>
-    <style>
-        @import url("");
-    </style>
-    <script src=""></script>
+<html lang="zh-CN">
+<head>
+    <link type="shortcut icon" herf="">
+    <meta charset="utf-8">
+    <title>代码格式说明</title>
+</head>
+<body id="index">
+    <div id="context">
+        <p class="subTitle">代码格式说明</p>
+        <p>在大型的/多人合作的项目中, 有一个统一的代码格式是必不可少的, 这篇文章列出了所有在本项目中的代码格式</p>
+        <!-- 只是为了告诉斯卡蒂格式的重要性 -->
+        <p></p>
+        <div id="list">
+            <ul>
+                <p class="subTitle">使用正确的元素标签</p>
+                <li>
+                    <p>使用自带的元素标签来导入文件</p>
+                    <br>
+                    <p>对于CSS(叠层样式表)文件, 请使用<code>&it;style&gt;</code>来导入</p>
+                    <p>具体方法为:</p>
+                    <code>
+                        &it;style&gt;<br>
+                        @import url("../css/文件名.css");<br>
+                        &it;/style&gt;<br>
+                    </code>
+                </li>
+                <br>
+                <li>
+                    <p>而JS(JavaScript)文件, 请使用<code>&lt;script&gt;</code>来导入</p>
+                    <p>具体方法为:</p>
+                    <code>
+                        &lt;script src="../js/文件名.js"&gt;&lt;/script&gt;
+                    </code>
+                </li>
+                <br>
+                <p><strong>请不要使用<code>&lt;link&gt;</code>标签</strong>, 因为此标签只适用于特殊文件的导入且只能用于特殊的用途(比如网页图标的导入和加载),</p>
+                <br>
+                <p class="subTitle">命名格式</p>
+                <li>
+                    <p>请确保使用英文标点符号以及空格</p>
+                    <br>
+                    <p>英文的标点符号更通用, 而且某些中文的标点符号容易和英文的混淆, 导致字体显示出错</p>
+                    <code>这是一个例子，中文的标点符号会让文案阅读起来更困难（更何况大家代码写多了应该都看不惯吧？？？）。、、《-中文的斜杠哈哈</code>
+                    <p>最关键的是, VSC有时无法为中文符号加上高亮, 这导致了更正的工作量加大...</p>
+                </li>
+                <br>
+                <li>
+                    <p>请在不同的符号之间添加空格</p>
+                    <br>
+                    <p>不加空格, 会让文章显现的很紧凑, 难以阅读(堆成一堆了).</p>
+                    <code>
+                        //这又是一个例子,显示了不加空格对于代码的难以阅读性<br>
+                        window.addEventListener("mousedown",function(event){
+                            const number=99;
+                            for(i=0;i&lt;number;i++){
+                                console.log("testingLOL");
+                            }
+                        });
+                    </code>
+                </li>
+            </ul>
+            <p class="notes">注: 对于对某些语言不熟悉的贡献者, 建议找专业的人来编辑吧...</p>
+        </div>
+        <br>
+        <p id="lastTimeEdited">本页最后编辑于 2024 年 11 月 18 日</p>
+        <div id="underPadding"></div>
+    </div>
+    <div id="manu">
+        <!-- JS自动添加 -->
+</div>
+</body>
+<script src="../js/main.js"></script>
+<style>
+    @import url("../css/div.css");
+    @import url("../css/image.css");
+    @import url("../css/manu.css");
+    @import url("../css/text.css");
+    @import url("../css/animation.css");
+</style>
 </html>
