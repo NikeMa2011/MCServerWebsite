@@ -31,7 +31,7 @@ MHZ-ORG official website: https://blog.mhzorg.top
 - [Русский (Russian)](#Русский)
 - [日本語 (Japanese)](#日本語)
 - [한국어 (Korean)](#한국어)
-- [العربية (Arabic)](#لعربية)
+- [العربية (Arabic)](#العربية)
 - [Português (Portuguese)](#Português)
 
 ---
