@@ -26,13 +26,13 @@ MHZ-ORG official website: https://blog.mhzorg.top
 - [中文 (Chinese)](#中文)
 - [English](#english)
 - [Español (Spanish)](#Español)
-- [Français (French)](#francais)
-- [Deutsch (German)](#deutsch)
-- [Русский (Russian)](#russian)
-- [日本語 (Japanese)](#japanese)
-- [한국어 (Korean)](#korean)
-- [العربية (Arabic)](#arabic)
-- [Português (Portuguese)](#portugues)
+- [Français (French)](#Français)
+- [Deutsch (German)](#Deutsch)
+- [Русский (Russian)](#Русский)
+- [日本語 (Japanese)](#日本語)
+- [한국어 (Korean)](#한국어)
+- [العربية (Arabic)](#لعربية)
+- [Português (Portuguese)](#Português)
 
 ---
 
