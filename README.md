@@ -25,7 +25,7 @@ MHZ-ORG official website: https://blog.mhzorg.top
 
 - [中文 (Chinese)](#中文)
 - [English](#english)
-- [Español (Spanish)](#espanol)
+- [Español (Spanish)](#Español)
 - [Français (French)](#francais)
 - [Deutsch (German)](#deutsch)
 - [Русский (Russian)](#russian)
