@@ -4,22 +4,18 @@ p, li, a, th {
     line-height: 1.6;
     color: #333;
 }
-
 ul {
     padding-left: 1.5rem;
     margin: 1rem 0;
 }
-
 a {
     text-decoration: none;
     color: #0059ff;
     transition: color 0.3s ease;
 }
-
 a:hover {
     color: #003399;
 }
-
 code {
     font-size: 1.4rem;
     padding: 0.3rem 0.5rem;
@@ -28,27 +24,23 @@ code {
     border-radius: 0.5rem;
     line-height: 1.4;
 }
-
 .title {
     padding: 1rem 0 1.5rem;
     font-size: 2.2rem;
     font-weight: 600;
     color: #222;
 }
-
 .subTitle {
     padding: 1rem 0;
     font-size: 2rem;
     font-weight: 500;
     color: #444;
 }
-
 .notes {
     font-size: 1.2rem;
     padding: 1rem 0;
     color: #555;
 }
-
 .middle {
     display: flex;
     justify-content: center;
@@ -59,20 +51,17 @@ code {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 #lastTimeEdited {
     padding: 2rem 0 1rem 0.5rem;
     font-size: 1rem;
     color: #666;
 }
-
-#wellcome {
+#welcome {
     font-size: 5rem;
     font-weight: 700;
     color: #0059ff;
     text-align: center;
 }
-
 #createdTime {
     font-size: 2rem;
     color: #666;
