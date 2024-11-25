@@ -2,7 +2,6 @@ const blurTitle = document.getElementById("blurTitle");
 const welcome = document.getElementById("welcome");
 const hiddenBox = document.getElementById("hiddenBox");
 const context = document.getElementById("context");
-const manu = document.getElementById("manu");
 
 var date = new Date();
 var clientHour = date.getHours();
@@ -33,7 +32,7 @@ function setBackGroundImage(){
         randomBackGroundNum = Math.floor((Math.random() * dayBackGroundImageNum) + 1);
         randomBackGroundString = "亮" + randomBackGroundNum;
         welcome.style.color = "#101010";
-    } else if(dayNight == "黄昏"){
+    } else if(dayNight == "黄昏") {
         randomBackGroundNum = Math.floor((Math.random() * twiLightBackGorundImageNum) + 1);
         randomBackGroundString = "黄" + randomBackGroundNum;
         welcome.style.color = "#ffffff";
@@ -59,6 +58,6 @@ blurTitle.addEventListener("pointerdown", function () {
         setTimeout(("blurTitle.hidden = true"), 990);
         blurTitle.style.animation = "flat 1s ease-out";
         context.hidden = false;
-        manu.style = "animation: appear 1s ease-out";
+        menu.style = "animation: appear 1s ease-out";
     }, 1000);
 });

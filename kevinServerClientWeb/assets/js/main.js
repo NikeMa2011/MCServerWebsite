@@ -1,7 +1,7 @@
-const manu = document.getElementById("manu");
+const menu = document.getElementById("menu");
 
-function addManu() {
-    manu.innerHTML = `
+function addMenu() {
+    menu.innerHTML = `
     <div id="links">
             <div id="navigation">
                 <p class="">导航</p>
@@ -18,4 +18,4 @@ function addManu() {
 // 以后请在这修改菜单内容 此脚本会自动为网页加上
 }
 
-addManu();
+addMenu();

@@ -1,4 +1,4 @@
-#manu {
+#menu {
     z-index: 4;
     position: fixed;
     right: 0px;
@@ -6,13 +6,13 @@
     padding: 1rem;
     border: 2px solid #ffffff;
 }
-#manu div{
+#menu div{
     display: none;
     padding: 0.5rem;
 }
-#manu a{
+#menu a{
     padding: 0.5rem;
 }
-#manu:hover div{
+#menu:hover div{
     display: block;
 }
