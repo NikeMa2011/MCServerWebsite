@@ -1,7 +1,8 @@
 const blurTitle = document.getElementById("blurTitle");
-const wellcome = document.getElementById("wellcome");
+const welcome = document.getElementById("welcome");
 const hiddenBox = document.getElementById("hiddenBox");
 const context = document.getElementById("context");
+const manu = document.getElementById("manu");
 
 var date = new Date();
 var clientHour = date.getHours();
@@ -10,7 +11,7 @@ console.log(date, clientHour);
 var dayNight;
 //图片总数
 var twiLightBackGorundImageNum = 3;
-var dayBackGroundImageNum = 9;
+var dayBackGroundImageNum = 9;  
 var nightBackGorundImageNum = 2;
 
 var randomBackGroundNum, randomBackGroundString;
@@ -31,15 +32,15 @@ function setBackGroundImage(){
     if (dayNight == "早晨") {
         randomBackGroundNum = Math.floor((Math.random() * dayBackGroundImageNum) + 1);
         randomBackGroundString = "亮" + randomBackGroundNum;
-        wellcome.style.color = "#101010";
+        welcome.style.color = "#101010";
     } else if(dayNight == "黄昏"){
         randomBackGroundNum = Math.floor((Math.random() * twiLightBackGorundImageNum) + 1);
         randomBackGroundString = "黄" + randomBackGroundNum;
-        wellcome.style.color = "#ffffff";
+        welcome.style.color = "#ffffff";
     } else {
         randomBackGroundNum = Math.floor((Math.random() * nightBackGorundImageNum) + 1);
         randomBackGroundString = "暗" + randomBackGroundNum;
-        wellcome.style.color = "#ffffff";
+        welcome.style.color = "#ffffff";
     }
 }
 function refreshBackGroundImage() {
@@ -52,8 +53,8 @@ refreshBackGroundImage();
 setTimeout("hiddenBox.hidden = true", 990);
 
 blurTitle.addEventListener("pointerdown", function () {
-    setTimeout(("wellcome.hidden = true"), 990);
-    wellcome.style.animation = "disAppear 1s ease-out";
+    setTimeout(("welcome.hidden = true"), 990);
+    welcome.style.animation = "disAppear 1s ease-out";
     setTimeout(() => {
         setTimeout(("blurTitle.hidden = true"), 990);
         blurTitle.style.animation = "flat 1s ease-out";
