@@ -1,46 +1,71 @@
+:root {
+    --font-system: system-ui;
+    --font-size-large: 1.5rem;
+    --font-size-medium: 1.2rem;
+    --font-size-small: 1rem;
+    --font-color-primary: #333;
+    --font-color-secondary: #444;
+    --font-color-tertiary: #555;
+    --font-color-muted: #666;
+    --link-color: #0059ff;
+    --link-hover-color: #003399;
+    --bg-color-code: #f9f9f9;
+    --padding-standard: 1rem;
+    --padding-large: 1.5rem;
+    --transition-speed: 0.3s;
+}
+
 p, li, a, th {
-    font-family: system-ui;
-    font-size: 1.5rem;
+    font-family: var(--font-system);
+    font-size: var(--font-size-large);
     line-height: 1.6;
-    color: #333;
+    color: var(--font-color-primary);
 }
+
 ul {
-    padding-left: 1.5rem;
-    margin: 1rem 0;
+    padding-left: var(--padding-large);
+    margin: var(--padding-standard) 0;
 }
+
 a {
     text-decoration: none;
-    color: #0059ff;
-    transition: color 0.3s ease;
+    color: var(--link-color);
+    transition: color var(--transition-speed) ease;
 }
+
 a:hover {
-    color: #003399;
+    color: var(--link-hover-color);
 }
+
 code {
-    font-size: 1.4rem;
+    font-size: calc(var(--font-size-large) - 0.1rem);
     padding: 0.3rem 0.5rem;
-    font-family: system-ui;
-    background-color: #f9f9f9;
+    font-family: var(--font-system);
+    background-color: var(--bg-color-code);
     border-radius: 0.5rem;
     line-height: 1.4;
 }
+
 .title {
-    padding: 1rem 0 1.5rem;
+    padding: var(--padding-standard) 0 calc(var(--padding-standard) + 0.5rem);
     font-size: 2.5rem;
     font-weight: 600;
     color: #222;
 }
+
 .subTitle {
-    padding: 1rem 0;
+    padding: var(--padding-standard) 0;
     font-size: 2rem;
     font-weight: 500;
-    color: #444;
+    color: var(--font-color-secondary);
 }
+
 .notes {
-    font-size: 1.2rem;
-    padding: 1rem 0;
-    color: #555;
+    font-size: var(--font-size-medium);
+    padding: var(--padding-standard) 0;
+    color: var(--font-color-tertiary);
 }
+
 .middle {
     display: flex;
     justify-content: center;
@@ -51,18 +76,21 @@ code {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 #lastTimeEdited {
-    padding: 2rem 0 1rem 0.5rem;
-    font-size: 1rem;
-    color: #666;
+    padding: 2rem 0 var(--padding-standard) calc(var(--padding-standard) / 2);
+    font-size: var(--font-size-small);
+    color: var(--font-color-muted);
 }
+
 #welcome {
     font-size: 5rem;
     font-weight: 500;
     text-align: center;
 }
+
 #createdTime {
     font-size: 2rem;
-    color: #666;
-    margin-top: 1rem;
+    color: var(--font-color-muted);
+    margin-top: var(--padding-standard);
 }
