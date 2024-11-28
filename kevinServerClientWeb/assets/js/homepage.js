@@ -52,7 +52,11 @@ refreshBackGroundImage();
 setTimeout("hiddenBox.hidden = true", 990);
 
 blurTitle.addEventListener("pointerdown", function () {
-    setTimeout(("welcome.hidden = true"), 990);
+    setTimeout(() => {
+        welcome.hidden = true;
+        welcome.style = null;
+        console.log("test");
+    }, 990);
     welcome.style.animation = "disAppear 1s ease-out";
     setTimeout(() => {
         setTimeout(("blurTitle.hidden = true"), 990);
