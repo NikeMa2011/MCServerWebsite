@@ -8,7 +8,7 @@
 <body id="index">
     <div id="context">
         <p class="title">代码格式说明</p>
-        <p class="subTitle">在大型的/多人合作的项目中, 有一个统一的代码格式是必不可少的, 这篇文章列出了所有在本项目中的代码格式</p>
+        <p class="subTitle">在大型的/多人合作的项目中, 有一个统一的代码格式是必不可少的, 此文章列出了所有在本项目中的代码格式</p>
         <!-- 只是为了告诉斯卡蒂和jimmy格式的重要性 -->
         <p></p>
         <div id="list">
@@ -17,14 +17,14 @@
                 <li>
                     <p>使用自带的元素标签来导入文件</p>
                     <br>
-                    <p>对于CSS(叠层样式表)文件, 请使用<code>&it;style&gt;</code>来导入</p>
+                    <p>对于CSS(叠层样式表)文件, 请使用<code>&lt;style&gt;</code>来导入</p>
                     <p>具体方法为:</p>
                     <code>
                         &lt;style&gt;<br>
-                        @import url("../css/文件名.css");<br>
+                        @import url("../css/<sup>*</sup>文件名.css");<br>
                         &lt;/style&gt;<br>
                     </code>
-                    <p>请注意: 在CSS中请不要在每个类之间添加空格, 这是不必要的</p>
+                    <p>请注意: 在CSS中请不要在每个类之间添加空格, 这是不必要的, 垂直格式已经足够</p>
                     </p>
                 </li>
                 <br>
@@ -32,7 +32,7 @@
                     <p>而JS(JavaScript)文件, 请使用<code>&lt;script&gt;</code>来导入</p>
                     <p>具体方法为:</p>
                     <code>
-                        &lt;script src="../js/文件名.js"&gt;&lt;/script&gt;
+                        &lt;script src="../js/<sup>*</sup>文件名.js"&gt;&lt;/script&gt;
                     </code>
                 </li>
                 <br>
@@ -63,6 +63,8 @@
                 </li>
             </ul>
             <p class="notes">注: 对于对某些语言不熟悉的贡献者, 建议找专业的人来编辑吧...</p>
+            <br>
+            <p class="notes"><sup>*</sup>: 只为文件名, 不是后缀</p>
         </div>
         <br>
         <p id="lastTimeEdited">本页最后编辑于 2024 年 11 月 25 日</p>
