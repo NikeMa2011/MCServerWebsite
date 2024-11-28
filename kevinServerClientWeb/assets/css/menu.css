@@ -6,13 +6,13 @@
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
-#menu div{
+#menu div {
     display: none;
     padding: 0.5rem;
 }
-#menu a{
+#menu a {
     padding: 0.5rem;
 }
-#menu:hover div{
+#menu:hover div {
     display: block;
 }
