@@ -59,7 +59,7 @@ code {
     color: var(--font-color-tertiary);
 }
 .middle {
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;

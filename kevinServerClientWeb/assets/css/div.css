@@ -7,14 +7,14 @@
     border-radius: 1rem;
 }
 .buttom {
-    border: 1px solid rgba(130, 130, 130, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 1rem;
     padding: 1rem;
     width: fit-content;
 }
 /*  */
 table {
-    border: 1px solid rgba(130, 130, 130, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 1rem;
     border-spacing: 0;
 }
