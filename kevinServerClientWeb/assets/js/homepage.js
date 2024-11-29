@@ -54,8 +54,7 @@ setTimeout("hiddenBox.hidden = true", 990);
 blurTitle.addEventListener("pointerdown", function () {
     setTimeout(() => {
         welcome.hidden = true;
-        welcome.style = null;
-        console.log("test");
+        welcome.style = "display: none;";
     }, 990);
     welcome.style.animation = "disAppear 1s ease-out";
     setTimeout(() => {
