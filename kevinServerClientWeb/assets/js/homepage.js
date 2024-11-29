@@ -62,5 +62,6 @@ blurTitle.addEventListener("pointerdown", function () {
         blurTitle.style.animation = "flat 1s ease-out";
         context.hidden = false;
         menu.style = "animation: appear 1s ease-out";
+        menu.hidden = false;
     }, 1000);
 });
