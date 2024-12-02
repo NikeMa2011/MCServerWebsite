@@ -38,17 +38,18 @@
                 <br>
                 <p><strong>请不要使用<code>&lt;link&gt;</code>标签</strong>, 因为此标签只适用于特殊文件的导入且只能用于特殊的用途(比如网页图标的导入和加载),</p>
                 <br>
-                <p class="subTitle">命名格式</p>
+                <p class="subTitle">请使用正确的格式</p>
                 <li>
                     <p>请确保使用英文标点符号以及空格</p>
                     <br>
                     <p>英文的标点符号更通用, 而且某些中文的标点符号容易和英文的混淆, 导致字体显示出错</p>
                     <code>这是一个例子，中文的标点符号会让文案阅读起来更困难（更何况大家代码写多了应该都看不惯吧？？？）。、、《-中文的斜杠哈哈</code>
-                    <p>最关键的是, VSC有时无法为中文符号加上高亮, 这导致了更正的工作量加大...</p>
+                    <p>最关键的是, VSC有时无法为中文符号加上高亮↓, 这导致了更正的工作量加大...</p>
+                    <img class="image" src="../image/images/chineseCharacter.jpg" alt="中文字符在VSC的显示">
                 </li>
                 <br>
                 <li>
-                    <p class="subTitle">请在不同的符号之间添加空格</p>
+                    <p>请在不同的符号之间添加空格</p>
                     <br>
                     <p>不加空格, 会让文章显现的很紧凑, 难以阅读(堆成一堆了).</p>
                     <code>
@@ -60,6 +61,20 @@
                             }<br>
                         });
                     </code>
+                    <p>但也不要添加过多的缩进</p>
+                    <p>添加过多的缩进会梳理各个语句之间的关系</p>
+                    <p>例子:</p>
+                    <code>
+                        let  a  =  90;<br>
+                        a  += 90;<br>
+                        console . log ( a + 'null' ) ;
+                    </code>
+                    <div id="hiddenImage"></div>
+                </li>
+                <br>
+                <li>
+                    <p>请不要添加过多的 奇奇怪怪的 特性</p>
+                    <p id="commit">懂得都懂awa</p>
                 </li>
             </ul>
             <p class="notes">注: 对于对某些语言不熟悉的贡献者, 建议找专业的人来编辑吧...</p>
@@ -75,6 +90,10 @@
 </div>
 </body>
 <script src="../js/menu.js"></script>
+<script src="../js/easterEgg.js"></script>
+<script>
+    console.log("here is a easter egg in this website\n这里有一个彩蛋\n");
+</script>
 <style>
     @import url("../css/div.css");
     @import url("../css/image.css");

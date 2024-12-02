@@ -69,6 +69,10 @@ code {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+.commits {
+    color: #265a2d;
+    /*  */
+}
 #lastTimeEdited {
     padding: 2rem 0 var(--padding-standard) calc(var(--padding-standard) / 2);
     font-size: var(--font-size-small);
