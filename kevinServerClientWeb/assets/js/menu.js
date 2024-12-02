@@ -4,10 +4,14 @@ function addMenu() {
     menu.innerHTML = `
     <div id="links">
             <div id="navigation">
-                <p>导航</p>
                 <div id="subArea">
+                    <p>导航</p>
                     <a href="contributors.html">🎈贡献者名单</a>
                     <a href="usefulLinks.html">🔗有用的链接</a>
+                </div>
+                <div id="subArea">
+                    <p>维护</p>
+                    <a href="codeFormat.html">💻代码格式</a>
                 </div>
             </div>
         </div>

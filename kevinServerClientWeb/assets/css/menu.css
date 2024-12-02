@@ -18,6 +18,7 @@
     display: block;
 }
 #subArea {
+    display: contents;
     padding: 0.2rem;
 }
 #menuIcon{
