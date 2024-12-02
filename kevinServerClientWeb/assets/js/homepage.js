@@ -2,7 +2,6 @@ const blurTitle = document.getElementById("blurTitle");
 const welcome = document.getElementById("welcome");
 const hiddenBox = document.getElementById("hiddenBox");
 const context = document.getElementById("context");
-const menu = document.getElementById("menu");
 
 let date = new Date();
 let clientHour = date.getHours();
