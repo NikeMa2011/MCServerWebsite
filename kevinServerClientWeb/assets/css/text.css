@@ -26,6 +26,7 @@ ul {
     margin: var(--padding-standard) 0;
 }
 a {
+    display: block;
     text-decoration: none;
     color: var(--link-color);
     transition: color var(--transition-speed) ease;

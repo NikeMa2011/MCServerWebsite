@@ -4,7 +4,8 @@
     right: 0px;
     bottom: 0px;
     padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #f9f9f9;
+    border-radius: 0.5rem;
 }
 #menu div {
     display: none;
@@ -15,4 +16,12 @@
 }
 #menu:hover div {
     display: block;
+}
+#subArea {
+    padding: 0.2rem;
+}
+#menuIcon{
+    height: 3rem;
+    left: 3rem;
+    float: right;
 }
