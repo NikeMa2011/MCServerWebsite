@@ -57,14 +57,15 @@ setTimeout(() => { hiddenBox.hidden = true; }, 990);
 blurTitle.addEventListener("pointerdown", function () {
     welcome.style.animation = "disAppear 1s ease-out";
     setTimeout(() => {
-        welcome.hidden = true;
+        blurTitle.innerHTML = null;
     }, 990);
-
-    setTimeout(() => {
-        blurTitle.hidden = true;
+    setTimeout(() => {;
         blurTitle.style.animation = "flat 1s ease-out";
         context.hidden = false;
         menu.style.animation = "appear 1s ease-out";
         menu.hidden = false;
-    }, 1000);
+        setTimeout(() => {
+            blurTitle.hidden = true;
+        }, 990);
+    }, 990);// jimmy求求你看看管理图的内容 请不要乱改好不好qwq
 });
