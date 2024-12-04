@@ -10,4 +10,4 @@ function nightModeCompare() {
         styleClass.remove("nightMode");
     }
 }
-styleClass.add("nightMode");
+nightModeCompare();
