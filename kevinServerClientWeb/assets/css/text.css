@@ -7,8 +7,8 @@
     --font-color-secondary: #444;
     --font-color-tertiary: #555;
     --font-color-muted: #666;
-    --link-color: #0059ff;
-    --link-hover-color: #003399;
+    --link-color: rgba(0, 89, 255, 0.9);
+    --link-hover-color: rgba(0, 85, 255, 0.75);
     --bg-color-code: #f9f9f9;
     --padding-standard: 1rem;
     --padding-large: 1.5rem;
@@ -46,7 +46,6 @@ code {
     padding: var(--padding-standard) 0 calc(var(--padding-standard) + 0.5rem);
     font-size: 2.5rem;
     font-weight: 600;
-    color: #222;
 }
 .subTitle {
     padding: var(--padding-standard) 0;
