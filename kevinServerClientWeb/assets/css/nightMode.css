@@ -1,14 +1,14 @@
-body.nightMode {
+.nightMode {
     background: #1a1a1a;
 }
-body.nightMode p, li, a, th{
+.nightMode p, li, a, th{
     color: #ffffff;
 }
-body.nightMode code{
+.nightMode code{
     color: #ffffff;
     background-color: #252525;
 }
-body.nightMode div#button{
+.nightMode div#button{
     color: #ffffff;
     background-color: #252525;
 }

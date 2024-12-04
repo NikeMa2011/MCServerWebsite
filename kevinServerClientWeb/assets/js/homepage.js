@@ -3,30 +3,12 @@ const welcome = document.getElementById("welcome");
 const hiddenBox = document.getElementById("hiddenBox");
 const context = document.getElementById("context");
 
-let date = new Date();
-let clientHour = date.getHours();
-console.log(date, clientHour);
-
-let dayNight;
 // 图片总数
 const twilightBackgroundImageNum = 3;
 const dayBackgroundImageNum = 9;
 const nightBackgroundImageNum = 2;
 
 let randomBackGroundNum, randomBackGroundString;
-
-function dayNightCompare() {
-    if (clientHour >= 5 && clientHour < 8) {
-        dayNight = "早晨"; // Morning
-    } else if (clientHour >= 8 && clientHour < 17) {
-        dayNight = "白天"; // Daytime
-    } else if (clientHour >= 17 && clientHour < 20) {
-        dayNight = "黄昏"; // Twilight
-    } else {
-        dayNight = "夜晚"; // Nighttime
-    }
-    setBackGroundImage();
-}
 
 function setBackGroundImage() {
     if (dayNight === "早晨" || dayNight === "白天") {
@@ -49,7 +31,7 @@ function refreshBackGroundImage() {
     console.log(blurTitle.style.backgroundImage);
 }
 
-dayNightCompare();
+setBackGroundImage();
 refreshBackGroundImage();
 
 setTimeout(() => { hiddenBox.hidden = true; }, 990);
