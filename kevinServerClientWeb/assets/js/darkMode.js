@@ -1,11 +1,11 @@
-const styleTag = document.getElementsByTagName("style");
+const styleTag = document.getElementById("darkModeStyle");
 
 function nightModeCompare() {
      if (clientHour >= 8 && clientHour < 17) { // Daytime
-        bodyClass.add("nightMode");
+        styleTag.innerHTML = "@import(\"../\"css/darkMode.css\")";
         console.log("夜间模式状态: 开启");
     } else { // Nighttime
-        bodyClass.remove("nightMode");
+        styleTag.innerHTML = null;
         console.log("夜间模式状态: 关闭")
     }
 }
