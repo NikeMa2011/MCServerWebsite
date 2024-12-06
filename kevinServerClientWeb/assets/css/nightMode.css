@@ -1,10 +1,7 @@
 body {
     background: #1a1a1a;
 }
-body p, li, a, th, s {
-    color: #ffffff;
-}
-body .subTitle, .title, .notes {
+body p, li, a, th, s, .subTitle, .title, .notes {
     color: #ffffff;
 }
 body code {
@@ -13,5 +10,5 @@ body code {
 }
 body div#button, #menu {
     color: #ffffff;
-    background-color: #252525;
+    background-color: #2e2e2e; /* 提升对比度 */
 }
