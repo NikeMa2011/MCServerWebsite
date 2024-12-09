@@ -1,53 +1,78 @@
+// 获取 DOM 元素
 const blurTitle = document.getElementById("blurTitle");
 const welcome = document.getElementById("welcome");
 const hiddenBox = document.getElementById("hiddenBox");
 const context = document.getElementById("context");
+const menu = document.getElementById("menu");
 
-// 图片总数
-const twilightBackgroundImageNum = 3;
-const dayBackgroundImageNum = 9;
-const nightBackgroundImageNum = 2;
-
-let randomBackGroundNum, randomBackGroundString;
+// 背景图片数量配置
+const backgroundImageCounts = {
+    day: 9,
+    twilight: 3,
+    night: 2,
+};
 
 function setBackGroundImage() {
-    if (dayNight === "早晨" || dayNight === "白天") {
-        randomBackGroundNum = Math.floor((Math.random() * dayBackgroundImageNum) + 1);
-        randomBackGroundString = "亮" + randomBackGroundNum;
-        welcome.style.color = "#101010";
-    } else if (dayNight === "黄昏") {
-        randomBackGroundNum = Math.floor((Math.random() * twilightBackgroundImageNum) + 1);
-        randomBackGroundString = "黄" + randomBackGroundNum;
-        welcome.style.color = "#ffffff";
-    } else {
-        randomBackGroundNum = Math.floor((Math.random() * nightBackgroundImageNum) + 1);
-        randomBackGroundString = "暗" + randomBackGroundNum;
-        welcome.style.color = "#ffffff";
+    let randomNum;
+    let prefix;
+    
+    switch (dayNight) {
+        case "早晨":
+        case "白天":
+            randomNum = Math.floor(Math.random() * backgroundImageCounts.day) + 1;
+            prefix = "亮";
+            welcome.style.color = "#101010";
+            break;
+        case "黄昏":
+            randomNum = Math.floor(Math.random() * backgroundImageCounts.twilight) + 1;
+            prefix = "黄";
+            welcome.style.color = "#ffffff";
+            break;
+        default:
+            randomNum = Math.floor(Math.random() * backgroundImageCounts.night) + 1;
+            prefix = "暗";
+            welcome.style.color = "#ffffff";
+            break;
     }
+
+    return `${prefix}${randomNum}`;
 }
 
-function refreshBackGroundImage() {
-    blurTitle.style.backgroundImage = `url("../image/backgrounds/${randomBackGroundString}.jpg")`;
-    console.log(blurTitle.style.backgroundImage);
+// 刷新背景图片
+function refreshBackGroundImage(imageString) {
+    blurTitle.style.backgroundImage = `url("../image/backgrounds/${imageString}.jpg")`;
+    console.log("背景图片设置为:", blurTitle.style.backgroundImage);
 }
 
-setBackGroundImage();
-refreshBackGroundImage();
+// 隐藏元素
+function hideElement(element, delay = 990) {
+    setTimeout(() => {
+        element.hidden = true;
+    }, delay);
+}
 
-setTimeout(() => { hiddenBox.hidden = true; }, 990);
+// 初始化逻辑
+const randomBackGroundString = setBackGroundImage();
+refreshBackGroundImage(randomBackGroundString);
+hideElement(hiddenBox);
 
+// 添加事件监听
 blurTitle.addEventListener("pointerdown", function () {
     welcome.style.animation = "disAppear 1s ease-out";
+
     setTimeout(() => {
-        blurTitle.innerHTML = null;
+        blurTitle.innerHTML = ""; // 清空内容
     }, 990);
-    setTimeout(() => {;
+
+    setTimeout(() => {
         blurTitle.style.animation = "flat 1s ease-out";
         context.hidden = false;
         menu.style.animation = "appear 1s ease-out";
         menu.hidden = false;
-        setTimeout(() => {
-            blurTitle.hidden = true;
-        }, 990);
-    }, 990);// jimmy求求你看看管理图的内容 请不要乱改好不好qwq
+
+        hideElement(blurTitle);
+    }, 990);
 });
+
+// 作者注释
+// 求求你看看管理图的内容，请不要乱改好不好 qwq 管理图？啥玩意？
