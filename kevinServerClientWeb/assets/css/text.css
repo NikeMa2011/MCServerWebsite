@@ -70,7 +70,6 @@ code {
 }
 .commits {
     color: #265a2d;
-    /*  */
 }
 #lastTimeEdited {
     padding: 2rem 0 var(--padding-standard) calc(var(--padding-standard) / 2);

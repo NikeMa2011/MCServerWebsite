@@ -1,83 +1,64 @@
-/* 全局样式重置，减少对一些组件的影响啊啊啊啊 */
-body, h1, h2, h3, p, ul, ol {
+/* 全局样式就得了 单独搞你还要一个一个的设置边框和填充 */
+* {
     margin: 0;
     padding: 0;
 }
-
-/* 全局样式，隐藏滚动条时注意兼容性哦 */
+/* 请不要加注释... 代码本身就已经说明了它的作用 还有你翻译类名干啥???*/
 ::-webkit-scrollbar {
     display: none;
 }
-
-/* 公用模糊效果类，可以复用 */
 .blurEffect {
     backdrop-filter: blur(5px);
     height: 100vh;
     width: 100vw;
     position: absolute;
 }
-
-/* 表格样式 */
 .table {
     border-radius: 1rem;
 }
-
-/* 按钮样式，修改了 ID 名称以更语义化 */
-#ctaButton {
+/* 不用语义化 button有多个类型(type) 使用id属性即可*/
+#button {
     background-color: #f9f9f9;
     border-radius: 0.5rem;
     padding: 0.3rem 0.5rem;
     width: fit-content;
 }
-
-/* 表格的边框及溢出隐藏，保证圆角显示 */
 table {
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 1rem;
     border-spacing: 0;
     overflow: hidden;
 }
-
-/* 表格表头样式 */
 th {
     padding: 1rem 1.5rem;
     text-align: left;
     font-weight: normal;
 }
-
-/* 内容容器样式，增加响应式处理 */
 #context {
     min-height: 60vh;
     width: auto;
     padding: 4rem;
     border-radius: 1rem;
 }
-
 @media (max-width: 768px) {
     #context {
         padding: 2rem;
     }
 }
-
-/* 模态框背景遮罩，调整背景色和透明度 */
 #modalOverlay {
     z-index: 3;
     height: 100vh;
     width: 100vw;
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
-    opacity: 0; /* 根据需求，这里可以调整是否显示 */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block; /* 调整是否显示的话 display了解一下 或者属性为content也可以*/
     animation: disAppear 1s ease-out;
 }
-
-/* 标题模糊层，复用了模糊效果类 */
 #blurTitle {
     z-index: 2;
     text-align: center;
     justify-content: center;
 }
-
-/* 底部填充样式 */
 #underPadding {
     height: 4rem;
 }
