@@ -11,7 +11,7 @@
         <p class="subTitle">在大型的/多人合作的项目中, 有一个统一的代码格式是必不可少的, 此文章列出了所有在本项目中的代码格式</p>
         <div id="list">
             <ul>
-                <p class="subTitle">使用正确的元素标签</p>
+                <p class="subTitle">请使用正确的元素标签</p>
                 <li>
                     <p>使用自带的元素标签来导入文件</p>
                     <br>
@@ -22,7 +22,7 @@
                         @import url("../css/<sup>*</sup>文件名.css");<br>
                         &lt;/style&gt;<br>
                     </code>
-                    <p>请注意: 在CSS中请不要在每个类之间添加空格, 这是不必要的, 垂直格式已经足够</p>
+                    <p><strong>请注意: 在CSS中请不要在每个类之间添加空格,</strong> 这是不必要的, 垂直格式已经足够</p>
                     </p>
                 </li>
                 <br>
@@ -34,7 +34,8 @@
                     </code>
                 </li>
                 <br>
-                <p><strong>请不要使用<code>&lt;link&gt;</code>标签</strong>, 因为此标签只适用于特殊文件的导入且只能用于特殊的用途(比如网页图标的导入和加载),</p>
+                <p><strong>请不要使用<code>&lt;link&gt;</code>标签,</strong> 因为此标签只适用于特殊文件的导入且只能用于特殊的用途(比如网页/标签页图标的导入和加载)</p>
+                <p><strong>还有别弄<code>faction.ico</code>!</strong> 这玩意就是个废</p><!--物-->
                 <br>
                 <p class="subTitle">请使用正确的格式</p>
                 <li>
@@ -63,11 +64,18 @@
                     <p>添加过多的缩进也会梳离各个语句之间的关系</p>
                     <p>例子:</p>
                     <code>
-                        let  a  =  90;<br>
-                        a  += 90;<br>
+                        let  a  =  90 ;<br>
+                        a  += 90 ;<br>
                         console . log ( a + 'null' ) ;
                     </code>
                     <div id="hiddenImage"></div>
+                </li>
+                <br>
+                <p class="subTitle">请正确使用注释</p>
+                <li>
+                    <p>代码本身就已经说明了它的作用, 在使用注释前, 请确保你要说明的内容是较难已理解的<s>我不是傻子</s></p>
+                    <p>比如多个且复杂的 类/函数/定义 等</p>
+                    <p>或者是在容易出错或误解的地方添加注释来提醒他人</p>
                 </li>
                 <br>
                 <li>
@@ -80,7 +88,7 @@
             <p class="notes"><sup>*</sup>: 只为文件名, 不是后缀</p>
         </div>
         <br>
-        <p id="lastTimeEdited">本页最后编辑于 2024 年 12 月 3 日</p>
+        <p id="lastTimeEdited">本页最后编辑于 2024 年 12 月 9 日</p>
         <div id="underPadding"></div>
     </div>
     <div id="menu">
