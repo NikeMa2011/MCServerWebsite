@@ -9,7 +9,7 @@ function dayNightCompare() {
         dayNight = "早晨"; // Morning
     } else if (clientHour >= 8 && clientHour < 17) {
         dayNight = "白天"; // Daytime
-    } else if (clientHour >= 17 && clientHour < 20) {
+    } else if (clientHour >= 17 && clientHour < 19) {
         dayNight = "黄昏"; // Twilight
     } else {
         dayNight = "夜晚"; // Nighttime
