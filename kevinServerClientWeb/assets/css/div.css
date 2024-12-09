@@ -1,9 +1,7 @@
-/* 全局样式就得了 单独搞你还要一个一个的设置边框和填充 */
 * {
     margin: 0;
     padding: 0;
 }
-/* 请不要加注释... 代码本身就已经说明了它的作用 还有你翻译类名干啥???*/
 ::-webkit-scrollbar {
     display: none;
 }
@@ -51,7 +49,7 @@ th {
     width: 100vw;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.5);
-    display: block; /* 调整是否显示的话 display了解一下 或者属性为content也可以*/
+    display: block;
     animation: disAppear 1s ease-out;
 }
 #blurTitle {
