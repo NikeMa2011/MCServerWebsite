@@ -1,17 +1,15 @@
-// 获取 DOM 元素
 const blurTitle = document.getElementById("blurTitle");
 const welcome = document.getElementById("welcome");
 const hiddenBox = document.getElementById("hiddenBox");
 const context = document.getElementById("context");
-const menu = document.getElementById("menu");
+// 已经在menu.js里定义了awa
 
-// 背景图片数量配置
+// 不要写注释
 const backgroundImageCounts = {
     day: 9,
     twilight: 3,
     night: 2,
 };
-
 function setBackGroundImage() {
     let randomNum;
     let prefix;
@@ -35,44 +33,32 @@ function setBackGroundImage() {
             break;
     }
 
-    return `${prefix}${randomNum}`;
+    return `${prefix}${randomNum}`;// 我了个嵌入表达式
 }
-
-// 刷新背景图片
 function refreshBackGroundImage(imageString) {
     blurTitle.style.backgroundImage = `url("../image/backgrounds/${imageString}.jpg")`;
     console.log("背景图片设置为:", blurTitle.style.backgroundImage);
 }
-
-// 隐藏元素
 function hideElement(element, delay = 990) {
     setTimeout(() => {
         element.hidden = true;
     }, delay);
 }
-
-// 初始化逻辑
 const randomBackGroundString = setBackGroundImage();
 refreshBackGroundImage(randomBackGroundString);
 hideElement(hiddenBox);
 
-// 添加事件监听
 blurTitle.addEventListener("pointerdown", function () {
     welcome.style.animation = "disAppear 1s ease-out";
 
     setTimeout(() => {
-        blurTitle.innerHTML = ""; // 清空内容
+        blurTitle.innerHTML = null; // null了解一下
     }, 990);
-
     setTimeout(() => {
         blurTitle.style.animation = "flat 1s ease-out";
         context.hidden = false;
         menu.style.animation = "appear 1s ease-out";
         menu.hidden = false;
-
         hideElement(blurTitle);
     }, 990);
 });
-
-// 作者注释
-// 求求你看看管理图的内容，请不要乱改好不好 qwq 管理图？啥玩意？
