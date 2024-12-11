@@ -2,9 +2,7 @@ const blurTitle = document.getElementById("blurTitle");
 const welcome = document.getElementById("welcome");
 const hiddenBox = document.getElementById("hiddenBox");
 const context = document.getElementById("context");
-// 已经在menu.js里定义了awa
 
-// 不要写注释
 const backgroundImageCounts = {
     day: 9,
     twilight: 3,
@@ -32,8 +30,7 @@ function setBackGroundImage() {
             welcome.style.color = "#ffffff";
             break;
     }
-
-    return `${prefix}${randomNum}`;// 我了个嵌入表达式
+    return `${prefix}${randomNum}`;
 }
 function refreshBackGroundImage(imageString) {
     blurTitle.style.backgroundImage = `url("../image/backgrounds/${imageString}.jpg")`;
@@ -52,7 +49,7 @@ blurTitle.addEventListener("pointerdown", function () {
     welcome.style.animation = "disAppear 1s ease-out";
 
     setTimeout(() => {
-        blurTitle.innerHTML = null; // null了解一下
+        blurTitle.innerHTML = null;
     }, 990);
     setTimeout(() => {
         blurTitle.style.animation = "flat 1s ease-out";
