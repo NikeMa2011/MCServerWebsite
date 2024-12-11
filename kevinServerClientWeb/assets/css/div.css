@@ -63,3 +63,6 @@ th {
 #underPadding {
     height: 4rem;
 }
+#warning p {
+    color: #ff0000 !important;
+}
