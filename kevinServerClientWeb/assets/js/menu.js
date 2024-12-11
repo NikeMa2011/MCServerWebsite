@@ -4,6 +4,7 @@ function addMenu() {
     menu.innerHTML = `
     <div id="links">
             <div id="navigation">
+                <a class="subTitle" href="introduce.html">主页</a>
                 <div id="subArea">
                     <p>导航</p>
                     <a href="contributors.html">🎈贡献者名单</a>
