@@ -1,0 +1,8 @@
+/* 在添加新的CSS文件请添加到这 谢谢合作 awa */
+/* 请注意加载文件的循序!!! */
+
+@import url("../css/div.css");
+@import url("../css/image.css");
+@import url("../css/menu.css");
+@import url("../css/text.css");
+@import url("../css/animation.css");
