@@ -17,9 +17,10 @@ MHZ-ORG official website: https://blog.mhzorg.top
 
 <(￣︶￣)↗[GO!]
 
-隐私协议/Privacy-Policy
 
 ---
+
+隐私协议/Privacy-Policy
 
 **语言选择 | Language Selection**
 
