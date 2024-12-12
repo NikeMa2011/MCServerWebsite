@@ -28,22 +28,25 @@ function core() {
         switch (dayNight) {
             case "早晨":
             case "白天":
-                randomNum = Math.floor(Math.random() * backgroundImageCounts.day) + 1;
+                randomNum = setRandomNum(day);
                 dayType = "亮";
                 welcome.style.color = "#101010";
                 break;
             case "黄昏":
-                randomNum = Math.floor(Math.random() * backgroundImageCounts.twilight) + 1;
+                randomNum = setRandomNum(twilight)
                 dayType = "黄";
                 welcome.style.color = "#ffffff";
                 break;
             default:
-                randomNum = Math.floor(Math.random() * backgroundImageCounts.night) + 1;
+                randomNum = setRandomNum(night)
                 dayType = "暗";
                 welcome.style.color = "#ffffff";
                 break;
         }
         return `${dayType}${randomNum}`;
+    }
+    function setRandomNum(type) {
+        return Math.floor(Math.random() * backgroundImageCounts[ype]) + 1;
     }
     function refreshBackGroundImage(imageString) {
         blurTitle.style.backgroundImage = `url("../image/backgrounds/${imageString}.jpg")`;
