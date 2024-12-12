@@ -46,7 +46,7 @@ function core() {
         return `${dayType}${randomNum}`;
     }
     function setRandomNum(type) {
-        return Math.floor(Math.random() * backgroundImageCounts[ype]) + 1;
+        return Math.floor(Math.random() * backgroundImageCounts[type]) + 1;
     }
     function refreshBackGroundImage(imageString) {
         blurTitle.style.backgroundImage = `url("../image/backgrounds/${imageString}.jpg")`;
