@@ -23,36 +23,31 @@ function core() {
     };
     function setBackGroundImage() {
         let randomNum;
-        let prefix;
+        let dayType;
 
         switch (dayNight) {
             case "早晨":
             case "白天":
                 randomNum = Math.floor(Math.random() * backgroundImageCounts.day) + 1;
-                prefix = "亮";
+                dayType = "亮";
                 welcome.style.color = "#101010";
                 break;
             case "黄昏":
                 randomNum = Math.floor(Math.random() * backgroundImageCounts.twilight) + 1;
-                prefix = "黄";
+                dayType = "黄";
                 welcome.style.color = "#ffffff";
                 break;
             default:
                 randomNum = Math.floor(Math.random() * backgroundImageCounts.night) + 1;
-                prefix = "暗";
+                dayType = "暗";
                 welcome.style.color = "#ffffff";
                 break;
         }
-        return `${prefix}${randomNum}`;
+        return `${dayType}${randomNum}`;
     }
     function refreshBackGroundImage(imageString) {
         blurTitle.style.backgroundImage = `url("../image/backgrounds/${imageString}.jpg")`;
         console.log("背景图片设置为:", blurTitle.style.backgroundImage);
-    }
-    function hideElement(element, delay = 990) {
-        setTimeout(() => {
-            element.hidden = true;
-        }, delay);
     }
     const randomBackGroundString = setBackGroundImage();
     refreshBackGroundImage(randomBackGroundString);
@@ -60,7 +55,6 @@ function core() {
 
     blurTitle.addEventListener("pointerdown", function () {
         welcome.style.animation = "disAppear 1s ease-out";
-
         setTimeout(() => {
             blurTitle.innerHTML = null;
         }, 990);
@@ -69,7 +63,9 @@ function core() {
             context.hidden = false;
             menu.style.animation = "appear 1s ease-out";
             menu.hidden = false;
-            hideElement(blurTitle);
+            setTimeout(() => {
+                blurTitle.hidden = true;
+            }, 990);
         }, 990);
     });
 }
