@@ -47,15 +47,16 @@ function run() {
     blurTitle.style.backgroundImage = `url(\"${backgroundString}\")`;
 
     setTimeout(() => {
-        hiddenTitle.hidden = true;
+        hiddenTitle.remove();;
     }, 990);
     addEventListener("mousedown", function() {
+        welcomeTitle.style.animation = "disAppear 1s ease-out";
         setTimeout(() => {
-            welcomeTitle.style.animation = "diappear 1s ease-out";
+            welcomeTitle.remove();
+            blurTitle.style.animation = "flat 1.5s ease-out";
             setTimeout(() => {
-                welcomeTitle.hidden = true;
-                
-            }, 990);
+                title.remove();
+            }, 1490);
         }, 990);
     });
 }
