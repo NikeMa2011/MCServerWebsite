@@ -1,6 +1,7 @@
 const title = document.getElementById("title");
 
-sessionStorage.setItem("Loaded", false);
+// 所有变量都已定义或传入
+sessionStorage.setItem("Loaded", false);// 测试
 console.log("页面以前是否刷新: " + sessionStorage.getItem("Loaded"));
 if (sessionStorage.getItem("Loaded") != true) {
     title.innerHTML = `<div id="hiddenTitle"></div>
@@ -20,40 +21,41 @@ function run() {
 
     let welcomeTitleColor = welcomeTitle.style.color;
 
-    let randomNum;
-    let backgroundImageString;
+    let backgroundString;
     let prefix = "../image/backgrounds/";
 
-    const backgroundImageNumList = [
-        day = 9,
-        twilight = 3,
-        night = 2
-    ];
+    const backgroundNumList = {day: 9, twilight: 3, night: 2};
     function dayNightCompare() {
         if (dayNight == "白天") {
-            backgroundImageString = `${prefix}亮${setRandomNum(night)}.jpg`;
+            backgroundString = `${prefix}亮${setRandomNum(backgroundNumList.day)}.jpg`;
             welcomeTitleColor = "#fff";
         } else if (dayNight == "早晨" || dayNight == "黄昏") {
-            backgroundImageString = `${prefix}黄${setRandomNum(night)}.jpg`;
+            backgroundString = `${prefix}黄${setRandomNum(backgroundNumList.twilight)}.jpg`;
             welcomeTitleColor = "#fff";
         } else if (dayNight == "夜晚") {
-            backgroundImageString = `${prefix}暗${setRandomNum(night)}.jpg`;
+            backgroundString = `${prefix}暗${setRandomNum(backgroundNumList.night)}.jpg`;
             welcomeTitleColor = "#000";
         } else {
             throw new Error("dayNight 值错误:" + dayNight);
         }
     }
     function setRandomNum(option) {
-        return Math.floor((Math.random() * backgroundImageNumList[option]) + 1);
+        return Math.floor((Math.random() * option) + 1);
     }
     dayNightCompare();
-    console.log("背景图片链接: " + backgroundImageString)
-    blurTitle.style = `url(\"${backgroundImageString}\")`;
+    console.log("背景图片链接: " + backgroundString)
+    blurTitle.style.backgroundImage = `url(\"${backgroundString}\")`;
 
     setTimeout(() => {
         hiddenTitle.hidden = true;
     }, 990);
     addEventListener("mousedown", function() {
-        
+        setTimeout(() => {
+            welcomeTitle.style.animation = "diappear 1s ease-out";
+            setTimeout(() => {
+                welcomeTitle.hidden = true;
+                
+            }, 990);
+        }, 990);
     });
 }
