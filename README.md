@@ -23,6 +23,11 @@ MHZ-ORG official website: https://blog.mhzorg.top
 
 或者您可以在此自助提交支持工单，我们会尽快处理   [工单支持](https://ga66j76d.forms.app/mc-server-case-support)
 
+For online support, please initiate a chat with this email address via Microsoft Teams: [Talk@mhzorg.top].
+
+After leaving a message, we will process your ticket as soon as possible.
+
+Alternatively, you can submit a support ticket here, and we will address it promptly. [Case Support](https://ga66j76d.forms.app/mc-server-case-support)
 
 ![icon](https://github.com/user-attachments/assets/ea61aa93-8ce7-477e-a8be-ffb21cd83ac6)
 
