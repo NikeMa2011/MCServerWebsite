@@ -21,6 +21,9 @@ MHZ-ORG official website: https://blog.mhzorg.top
 
 留言后，我们将会尽快处理该工单
 
+或者您可以在此自助提交支持工单，我们会尽快处理   https://ga66j76d.forms.app/daily-report-form
+
+
 ![icon](https://github.com/user-attachments/assets/ea61aa93-8ce7-477e-a8be-ffb21cd83ac6)
 
 ---
