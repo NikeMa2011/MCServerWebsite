@@ -17,6 +17,7 @@ MHZ-ORG official website: https://blog.mhzorg.top
 
 <(￣︶￣)↗[GO!]
 
+如需获取在线支持，请在Microsoft Teams向此邮箱发起会话
 
 ![icon](https://github.com/user-attachments/assets/ea61aa93-8ce7-477e-a8be-ffb21cd83ac6)
 
