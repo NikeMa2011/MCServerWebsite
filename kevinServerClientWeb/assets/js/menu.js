@@ -1,1 +1,1 @@
-document.getElementById("menu") = menuHTML;
+document.getElementById("menu").innerHTML = menuHTML;
