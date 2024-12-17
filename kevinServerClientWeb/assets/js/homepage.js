@@ -1,7 +1,6 @@
 const title = document.getElementById("title");
 
 // 所有变量都已定义或传入
-sessionStorage.setItem("Loaded", false);// 测试
 console.log("页面以前是否刷新: " + sessionStorage.getItem("Loaded"));
 if (sessionStorage.getItem("Loaded") != true) {
     title.innerHTML = `<div id="hiddenTitle"></div>
