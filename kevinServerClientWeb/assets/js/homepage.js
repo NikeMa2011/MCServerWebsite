@@ -2,13 +2,13 @@ const title = document.getElementById("title");
 
 // 所有变量都已定义或传入
 console.log("页面以前是否刷新: " + sessionStorage.getItem("Loaded"));
-if (sessionStorage.getItem("Loaded") != true) {
+if (!sessionStorage.getItem("Loaded")) {
     title.innerHTML = `<div id="hiddenTitle"></div>
         <div id="blurTitle">
             <p id="welcomeTitle" class="middle">欢迎来到 MIS 的 MC 小家!</p>
         </div>
     `;
-    sessionStorage.getItem("Loaded", true);
+    sessionStorage.setItem("Loaded", true);
     console.log("加载背景函数");
     run();
 }
