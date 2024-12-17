@@ -1,64 +1,106 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <link type="shortcut icon" herf="../image/icons/icon.jpg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>贡献者们</title>
+    <link rel="icon" href="data:image/png;base64,..." type="image/png"> <!-- 可替换为实际图片路径或Base64 -->
+    <style>
+        /* 基本样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #444;
+        }
+        p {
+            text-align: center;
+            margin: 10px 20px;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #555;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        a {
+            color: #0078D7;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div id="context">
-        <p class="title">贡献者名单</p>
-        <p class="subTitle">所有对此项目由过奉献的人</p>
-        <p>在我们的服务器中,维护与<del>没有意义的更新pwp</del>是不可避免的,这些由服务器的贡献者默默无闻的做着,他们的存在让梦想成了事实,在此感谢!❤</p>
-        <br>
-        <p id="contributorsText" class="subTitle">贡献者名单</p>
-        <div class="table">
-            <table id="contributorsList">
-                <thead>
-                    <tr>
-                        <th id="name">名称</th>
-                        <th id="age">年龄</th>
-                        <th id="work">工作</th>
-                        <th id="introduce">介绍</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th><a href="mailto:zbc857758@163.com">Kevin</a></th>
-                        <th>13</th>
-                        <th>服务器管理</th>
-                        <th>过于开朗的男娘<br>喜欢研究ACGN文化 (特别是蔚来档案)<br>经常拿服务器做测试导致服务器崩溃pwp</th>
-                    </tr>
-                    <tr>
-                        <th><a href="mailto:huz193py@outlook.com">Nike</a></th>
-                        <th>13</th>
-                        <th>官网编写</th>
-                        <th>不打不闹的好孩纸 小建筑党🏢<br>网页 前端/后端 工作者<br>代码格式/源文件 管理人员</th>
-                    </tr>
-                    <tr>
-                        <th><a href="mailto:Talk@mhzorg.top">MHZ Organization</a></th>
-                        <th>13</th>
-                        <th>服务器提供</th>
-                        <th>服务器重度爱好者 (团队)<br>MS开发者<br>Microsoft认证Azure云助理级工程师</th>
-                    </tr>
-                </tbody>
-                <!-- 方鑫你什么时候来啊 qwq -->
-            </table>
-        </div>
-        <p id="lastTimeEdited">本页最后编辑于 2024 年 12 月 11 日</p>
-        <div id="underPadding"></div>
-    </div>
-    <div id="menu">
-        <!-- JS自动添加 -->
+        <h1>贡献者名单</h1>
+        <h2>所有对此项目做出奉献的人</h2>
+        <p>
+            在我们的服务器中，维护与 <del>没有意义的更新 pwp</del> 是不可避免的。
+            这些工作由贡献者默默无闻地完成，他们的存在让梦想成了现实，在此感谢！❤
+        </p>
+        <h2>贡献者名单</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>年龄</th>
+                    <th>工作</th>
+                    <th>介绍</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="mailto:zbc857758@163.com">Kevin</a></td>
+                    <td>13</td>
+                    <td>服务器管理</td>
+                    <td>
+                        过于开朗的男娘<br>
+                        喜欢研究ACGN文化（特别是蔚来档案）<br>
+                        经常拿服务器做测试导致服务器崩溃 pwp
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="mailto:huz193py@outlook.com">Nike</a></td>
+                    <td>13</td>
+                    <td>官网编写</td>
+                    <td>
+                        不打不闹的好孩纸 小建筑党🏢<br>
+                        网页 前端/后端 工作者<br>
+                        代码格式/源文件 管理人员
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="mailto:Talk@mhzorg.top">MHZ Organization</a></td>
+                    <td>13</td>
+                    <td>服务器提供</td>
+                    <td>
+                        服务器重度爱好者（团队）<br>
+                        MS开发者<br>
+                        Microsoft认证Azure云助理级工程师
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>本页最后编辑于 2024 年 12 月 11 日</p>
     </div>
 </body>
-<style>
-    @import url("../css/importCore.css");
-</style>
-<style id="darkModeStyleTag"></style>
-<script src="../js/menuContext.js"></script>
-<script src="../js/menu.js"></script>
-<script src="../js/date.js"></script>
-<script src="../js/darkMode.js"></script>
 </html>
