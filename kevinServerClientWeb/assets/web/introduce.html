@@ -72,28 +72,39 @@
 
 <style>
     @import url("../css/importCore.css");
-    
+
+    /* 工业风格按钮 */
     #downloadButton {
-        padding: 10px 20px;
-        background-color: #4CAF50;
-        color: white;
+        padding: 12px 24px;
+        background-color: #333;
+        color: #f4f4f4;
         text-decoration: none;
+        border: 2px solid #444;
         border-radius: 5px;
-        transition: background-color 0.3s ease, transform 0.1s ease;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+        position: relative;
+        transition: all 0.3s ease-in-out;
     }
 
     #downloadButton:hover {
-        background-color: #45a049;
+        background-color: #444;
+        border-color: #888;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     }
 
     #downloadButton:active {
-        background-color: #388e3c;
-        transform: scale(0.98); /* 按钮缩小效果 */
+        background-color: #555;
+        transform: translateY(2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
 
     .loading {
         cursor: wait;
         background-color: #888;
+        color: #fff;
+        border-color: #aaa;
     }
 </style>
 
