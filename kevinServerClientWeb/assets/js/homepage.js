@@ -46,7 +46,7 @@ function run() {
     blurTitle.style.backgroundImage = `url(\"${backgroundString}\")`;
 
     setTimeout(() => {
-        hiddenTitle.remove();;
+        hiddenTitle.remove();
     }, 990);
     addEventListener("mousedown", function() {
         welcomeTitle.style.animation = "disAppear 1s ease-out";
