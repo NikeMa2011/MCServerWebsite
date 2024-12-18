@@ -73,31 +73,33 @@
 <style>
     @import url("../css/importCore.css");
 
-    /* 工业风格按钮 */
+    /* 金属质感按钮 */
     #downloadButton {
-        padding: 12px 24px;
-        background-color: #333;
+        padding: 14px 28px;
+        background: linear-gradient(145deg, #2c2c2c, #434343);
         color: #f4f4f4;
         text-decoration: none;
-        border: 2px solid #444;
-        border-radius: 5px;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 16px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-        position: relative;
-        transition: all 0.3s ease-in-out;
+        border: 2px solid #333;
+        border-radius: 8px;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
 
     #downloadButton:hover {
-        background-color: #444;
-        border-color: #888;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        background: linear-gradient(145deg, #4e4e4e, #5a5a5a);
+        color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        transform: translateY(-4px);
     }
 
     #downloadButton:active {
-        background-color: #555;
+        background: linear-gradient(145deg, #3a3a3a, #474747);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transform: translateY(2px);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
 
     .loading {
