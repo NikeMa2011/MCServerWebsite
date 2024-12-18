@@ -109,8 +109,13 @@
 
         // 模拟下载过程（实际应用中这里可以处理异步请求，下载文件等）
         setTimeout(function() {
-            window.location.href = event.target.href; // 下载链接
-        }, 2000); // 模拟延迟后触发下载
+            // 恢复按钮状态
+            button.classList.remove("loading");
+            button.innerHTML = "下载客户端";
+
+            // 模拟实际下载
+            window.location.href = event.target.href;
+        }, 2000); // 模拟延迟2秒后恢复按钮
     }
 </script>
 
