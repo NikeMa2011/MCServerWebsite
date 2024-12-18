@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <link type="shortcut icon" herf="../image/icons/icon.jpg">
+    <link rel="shortcut icon" href="../image/icons/icon.jpg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIS的MC小家</title>
@@ -29,7 +29,7 @@
         <div id="serverClient">
             <p class="subTitle">服务器客户端下载</p>
             <div id="button">
-                <a href="https://1drv.ms/u/c/d842461e36cdebfb/EQ0wKJfH91ZHs65EsStFBFwB-NIGLIjOrT7iVsGjpxAzow?e=7nEvTs">下载客户端</a>
+                <a href="https://1drv.ms/u/c/d842461e36cdebfb/EQ0wKJfH91ZHs65EsStFBFwB-NIGLIjOrT7iVsGjpxAzow?e=7nEvTs" id="downloadButton" onclick="handleDownloadClick(event)">下载客户端</a>
             </div>
         </div>
         <br>
@@ -69,11 +69,52 @@
         <!-- JS自动添加 -->
     </div>
 </body>
+
 <style>
     @import url("../css/importCore.css");
-</style>    
-<style id="darkModeStyleTag"></style>
-    <script src="../js/menuContext.js"></script>
+    
+    #downloadButton {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    #downloadButton:hover {
+        background-color: #45a049;
+    }
+
+    #downloadButton:active {
+        background-color: #388e3c;
+        transform: scale(0.98); /* 按钮缩小效果 */
+    }
+
+    .loading {
+        cursor: wait;
+        background-color: #888;
+    }
+</style>
+
+<script>
+    function handleDownloadClick(event) {
+        // 阻止默认行为
+        event.preventDefault();
+
+        // 更改按钮为加载中状态
+        const button = document.getElementById("downloadButton");
+        button.classList.add("loading");
+        button.innerHTML = "正在下载...";
+
+        // 模拟下载过程（实际应用中这里可以处理异步请求，下载文件等）
+        setTimeout(function() {
+            window.location.href = event.target.href; // 下载链接
+        }, 2000); // 模拟延迟后触发下载
+    }
+</script>
+
+<script src="../js/menuContext.js"></script>
 <script src="../js/menu.js"></script>
 <script src="../js/date.js"></script>
 <script src="../js/darkMode.js"></script>
