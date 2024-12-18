@@ -22,48 +22,48 @@
 <style>
     @import url("../css/importCore.css");
 
-    /* 金属质感按钮 */
+    /* 设计更高端的按钮 */
     #downloadButton {
         padding: 14px 28px;
-        background: linear-gradient(145deg, #3a3a3a, #525252);
+        background: linear-gradient(145deg, #4f4f4f, #636363); /* 金属渐变 */
         color: #f4f4f4;
         text-decoration: none;
-        border: 2px solid #333;
-        border-radius: 8px;
-        font-family: 'Roboto', sans-serif;
+        border: 2px solid #444;
+        border-radius: 12px; /* 圆角，增加现代感 */
+        font-family: 'Roboto', sans-serif; /* 更精致的字体 */
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 1px;
-        text-transform: uppercase;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        transition: all 0.3s ease;
+        text-transform: uppercase; /* 字母大写 */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); /* 强烈阴影，呈现金属效果 */
+        transition: all 0.4s ease;
         position: relative;
     }
 
-    /* 鼠标悬停时的效果 */
+    /* 鼠标悬停时效果 */
     #downloadButton:hover {
-        background: linear-gradient(145deg, #565656, #6a6a6a);
+        background: linear-gradient(145deg, #6a6a6a, #7c7c7c); /* 更深的金属色 */
         color: #fff;
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* 更强的阴影 */
+        transform: translateY(-7px) scale(1.08); /* 按钮稍微上移并放大 */
     }
 
     /* 按钮按下时的效果 */
     #downloadButton:active {
-        background: linear-gradient(145deg, #444444, #565656);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        transform: translateY(2px) scale(0.98);
+        background: linear-gradient(145deg, #565656, #6c6c6c); /* 更深的渐变效果 */
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* 轻微阴影 */
+        transform: translateY(3px) scale(0.98); /* 按钮缩小并下沉 */
     }
 
     /* 加载状态 */
     .loading {
         cursor: wait;
-        background-color: #888;
-        color: #fff;
-        border-color: #aaa;
+        background-color: #999;
+        color: #333;
+        border-color: #777;
     }
 
-    /* 鼠标指针样式 */
+    /* 自定义鼠标样式 */
     #downloadButton {
         cursor: pointer;
     }
