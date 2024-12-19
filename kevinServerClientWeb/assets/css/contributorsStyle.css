@@ -2,7 +2,6 @@ body {
     font-family: system-ui;/* 这里加 system-ui 就好了 不用单独声称无衬线字体awa */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
