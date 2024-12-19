@@ -65,85 +65,10 @@
         <p id="lastTimeEdited">本页最后编辑于 2024 年 12 月 3 日</p>
         <div id="underPadding"></div>
     </div>
-
-    <!-- Menu JS -->
     <div id="menu">
         <!-- JS自动添加 -->
     </div>
 </body>
-
-<style>
-    @import url("../css/importCore.css");
-
-    /* 设计更高端的按钮 */
-    #downloadButton {
-        padding: 14px 28px;
-        background: linear-gradient(145deg, #4f4f4f, #636363); /* 金属渐变 */
-        color: #f4f4f4;
-        text-decoration: none;
-        border: 2px solid #444;
-        border-radius: 12px; /* 圆角，增加现代感 */
-        font-family: 'Roboto', sans-serif; /* 更精致的字体 */
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        text-transform: uppercase; /* 字母大写 */
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); /* 强烈阴影，呈现金属效果 */
-        transition: all 0.4s ease;
-        position: relative;
-    }
-
-    /* 鼠标悬停时效果 */
-    #downloadButton:hover {
-        background: linear-gradient(145deg, #6a6a6a, #7c7c7c); /* 更深的金属色 */
-        color: #fff;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* 更强的阴影 */
-        transform: translateY(-7px) scale(1.08); /* 按钮稍微上移并放大 */
-    }
-
-    /* 按钮按下时的效果 */
-    #downloadButton:active {
-        background: linear-gradient(145deg, #565656, #6c6c6c); /* 更深的渐变效果 */
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* 轻微阴影 */
-        transform: translateY(3px) scale(0.98); /* 按钮缩小并下沉 */
-    }
-
-    /* 加载状态 */
-    .loading {
-        cursor: wait;
-        background-color: #999;
-        color: #333;
-        border-color: #777;
-    }
-
-    /* 自定义鼠标样式 */
-    #downloadButton {
-        cursor: pointer;
-    }
-</style>
-
-<script>
-    function handleDownloadClick(event) {
-        // 阻止默认行为
-        event.preventDefault();
-
-        // 更改按钮为加载中状态
-        const button = document.getElementById("downloadButton");
-        button.classList.add("loading");
-        button.innerHTML = "正在下载...";
-
-        // 模拟下载过程（实际应用中这里可以处理异步请求，下载文件等）
-        setTimeout(function() {
-            // 恢复按钮状态
-            button.classList.remove("loading");
-            button.innerHTML = "下载客户端";
-
-            // 模拟实际下载
-            window.location.href = event.target.href;
-        }, 2000); // 模拟延迟2秒后恢复按钮
-    }
-</script>
-
 <script src="../js/menuContext.js"></script>
 <script src="../js/menu.js"></script>
 <script src="../js/date.js"></script>
