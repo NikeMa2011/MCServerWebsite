@@ -15,7 +15,7 @@
     --transition-speed: 0.3s;
 }
 /*  */
-p, li, a, th {
+p, li, a, th, td {
     font-family: var(--font-system);
     font-size: var(--font-size-large);
     line-height: 1.6;
