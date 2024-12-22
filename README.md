@@ -31,6 +31,8 @@ Alternatively, you can submit a support ticket here, and we will address it prom
 
 预告：服务器即将正式开放
 
+Notice: the server will be officially opened soon
+
 ![icon](https://github.com/user-attachments/assets/ea61aa93-8ce7-477e-a8be-ffb21cd83ac6)
 
 ---
