@@ -29,6 +29,8 @@ After leaving a message, we will process your ticket as soon as possible.
 
 Alternatively, you can submit a support ticket here, and we will address it promptly. [Case Support](https://ga66j76d.forms.app/mc-server-case-support)
 
+预告：服务器即将正式开放
+
 ![icon](https://github.com/user-attachments/assets/ea61aa93-8ce7-477e-a8be-ffb21cd83ac6)
 
 ---
