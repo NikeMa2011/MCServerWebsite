@@ -1,3 +1,6 @@
+const iconTagContext = `<a id="menuLink" href="main.html">
+<img id="menuIcon" src="../image/icons/icon.jpg" alt="主页图标">
+</a>`;
 const menuHTML = `
 <div id="links">
             <div id="navigation">
@@ -13,8 +16,6 @@ const menuHTML = `
                 </div>
             </div>
         </div>
-        <a href="main.html">
-            <img id="menuIcon" src="../image/icons/icon.jpg" alt="主页图标">
-        </a>
+        ${iconTagContext}
 </div>
 `;

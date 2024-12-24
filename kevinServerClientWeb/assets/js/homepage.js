@@ -24,6 +24,7 @@ function run() {
     let prefix = "../image/backgrounds/";
 
     const backgroundNumList = {day: 9, twilight: 3, night: 2};
+
     function dayNightCompare() {
         if (dayNight == "白天") {
             backgroundString = `${prefix}亮${setRandomNum(backgroundNumList.day)}.jpg`;
@@ -59,3 +60,11 @@ function run() {
         }, 990);
     });
 }
+function iconTagReplace() {
+    const menu = document.getElementById("menuMain");
+    const iconTag = document.getElementById("menuLink");
+    iconTag.remove();
+    const menuContext = menu.innerHTML;
+    menu.innerHTML = iconTagContext + menuContext;
+}
+iconTagReplace();
