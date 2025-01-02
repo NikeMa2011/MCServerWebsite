@@ -32,4 +32,6 @@
     background: var(--bg-color-code);
     border-radius: 0.5rem;  
     background-color: var(--bg-color-code);
+    width: 30vw;
+    height: auto;
 }

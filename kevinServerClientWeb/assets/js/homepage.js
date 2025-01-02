@@ -22,7 +22,7 @@ function run() {
 
     let backgroundString;
     let prefix = "../image/backgrounds/";
-
+    
     const backgroundNumList = {day: 9, twilight: 3, night: 2};
 
     function dayNightCompare() {
