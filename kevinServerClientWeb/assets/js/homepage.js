@@ -1,4 +1,5 @@
 const title = document.getElementById("title");
+const context = document.getElementById("context");
 
 // 所有变量都已定义或传入
 console.log("页面以前是否刷新: " + sessionStorage.getItem("Loaded"));
@@ -16,7 +17,6 @@ function run() {
     const hiddenTitle = document.getElementById("hiddenTitle");
     const blurTitle = document.getElementById("blurTitle");
     const welcomeTitle = document.getElementById("welcomeTitle");
-    const context = document.getElementById("context");
 
     let welcomeTitleColor = welcomeTitle.style.color;
 
@@ -66,5 +66,20 @@ function iconTagReplace() {
     iconTag.remove();
     const menuContext = menu.innerHTML;
     menu.innerHTML = iconTagContext + menuContext;
+}
+function unFreezeThatBro() {
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    console.log("现在是: " + month + '月' + day + '日');
+    if (month == 1) {
+        if(day >= 1 && day <= 15) {
+            console.log("新年快乐\n那个男人解冻力");
+            context.innerHTML = "<video src=\"../video/恭喜发财 - 刘德华.mp4\" autoplay></video>";
+        } else {
+            console.log("新年已经过了");
+        }
+    } else {
+        console.log("现在不是一月");
+    }
 }
 iconTagReplace();
