@@ -87,3 +87,7 @@ code {
     color: var(--font-color-muted);
     margin-top: var(--padding-standard);
 }
+#randomText {
+    font-size: 1.5rem;
+    text-align: center;
+}
