@@ -1,7 +1,6 @@
 const title = document.getElementById("title");
 const context = document.getElementById("context");
 
-// 所有变量都已定义或传入
 console.log("页面以前是否刷新: " + sessionStorage.getItem("Loaded"));
 if (!sessionStorage.getItem("Loaded")) {
     title.innerHTML = `<div id="hiddenTitle"></div>

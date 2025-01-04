@@ -1,6 +1,7 @@
 let date = new Date();
 let clientHour = date.getHours();
-console.log(date, clientHour);
+console.log("本地时间为: " + date);
+console.log("本地时间-小时为: " + clientHour);
 
 let dayNight;
 

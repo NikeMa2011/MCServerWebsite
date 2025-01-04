@@ -1,5 +1,4 @@
 const styleTag = document.getElementById("darkModeStyleTag");
-console.log("已获取: darkModeStyleTag");
 
 function nightModeCompare(op) {
     if (dayNight === "夜晚") {

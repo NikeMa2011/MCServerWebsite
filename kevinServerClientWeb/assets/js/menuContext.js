@@ -1,6 +1,9 @@
-const iconTagContext = `<a id="menuLink" href="main.html">
+// 单独使用(见homepage.js导入)
+const iconTagContext = `
+<a id="menuLink" href="main.html">
 <img id="menuIcon" src="../image/icons/icon.jpg" alt="主页图标">
-</a>`;
+</a>
+`;
 const menuHTML = `
 <div id="links">
             <div id="navigation">
