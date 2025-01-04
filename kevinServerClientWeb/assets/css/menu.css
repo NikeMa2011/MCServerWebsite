@@ -26,12 +26,11 @@
     left: 3rem;
     float: right;
 }
-/*  */
 #menuMain {
     padding: 1rem;
     background: var(--bg-color-code);
     border-radius: 0.5rem;  
     background-color: var(--bg-color-code);
     width: 30vw;
-    height: auto;
+    height: calc(100vh - 10rem);
 }
