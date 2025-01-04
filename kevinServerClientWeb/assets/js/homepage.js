@@ -74,7 +74,7 @@ function unFreezeThatBro() {
     if (month == 1) {
         if(day >= 1 && day <= 15) {
             console.log("新年快乐\n那个男人解冻力");
-            context.innerHTML = "<video src=\"../video/恭喜发财 - 刘德华.mp4\" autoplay loop></video><p id=\"randomText\"></p>";
+            context.innerHTML = "<video src=\"../video/恭喜发财 - 刘德华.mp4\" autoplay loop controls></video><p id=\"randomText\"></p>";
         } else {
             console.log("新年已经过了");
         }
