@@ -29,14 +29,14 @@ table {
 td, th {
     padding: 1.5rem;
 }
-#context {
+#content {
     min-height: 60vh;
     width: auto;
     padding: 4rem;
     border-radius: 1rem;
 }
 @media (max-width: 768px) {
-    #context {
+    #content {
         padding: 2rem;
     }
 }

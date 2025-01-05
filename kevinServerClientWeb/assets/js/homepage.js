@@ -1,5 +1,5 @@
 const title = document.getElementById("title");
-const context = document.getElementById("context");
+const content = document.getElementById("content");
 
 console.log("页面以前是否刷新: " + sessionStorage.getItem("Loaded"));
 if (!sessionStorage.getItem("Loaded")) {
@@ -63,8 +63,8 @@ function iconTagReplace() {
     const menu = document.getElementById("menuMain");
     const iconTag = document.getElementById("menuLink");
     iconTag.remove();
-    const menuContext = menu.innerHTML;
-    menu.innerHTML = iconTagContext + menuContext;
+    const menucontent = menu.innerHTML;
+    menu.innerHTML = iconTagcontent + menucontent;
 }
 function unFreezeThatBro() {
     const month = date.getMonth() + 1;
@@ -73,7 +73,7 @@ function unFreezeThatBro() {
     if (month == 1) {
         if(day >= 1 && day <= 15) {
             console.log("新年快乐\n那个男人解冻力");
-            context.innerHTML = "<video src=\"../video/恭喜发财 - 刘德华.mp4\" autoplay loop controls></video><p id=\"randomText\"></p>";
+            content.innerHTML = "<video src=\"../video/恭喜发财 - 刘德华.mp4\" autoplay loop controls></video><p id=\"randomText\"></p>";
         } else {
             console.log("新年已经过了");
         }

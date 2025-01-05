@@ -1,5 +1,5 @@
 // 单独使用(见homepage.js导入)
-const iconTagContext = `
+const iconTagcontent = `
 <a id="menuLink" href="main.html">
 <img id="menuIcon" src="../image/icons/icon.jpg" alt="主页图标">
 </a>
@@ -19,6 +19,6 @@ const menuHTML = `
                 </div>
             </div>
         </div>
-        ${iconTagContext}
+        ${iconTagcontent}
 </div>
 `;
