@@ -83,7 +83,7 @@ function unFreezeThatBro() {
     const randomText = document.getElementById("randomText");
     const textList = ["彳尔 女子", "新年快乐", "恭喜发财", "hh 那个男人解冻力",  "2025 你好", "2024 再见", "你旁边应该没人吧hhh", "░░░░░░░░░░ CQC 战术防御措施 ░░░░░░░░░░", "也许你会对为什么有这个玩意产生困惑", "但这真的就只是随便加的", "你认为呢", "awa", "undefind", "null", "(x) UnCaughtTypeError: null"];// 这些都是人类的梗 copilet 你不要编辑哦 awa
     let orderNum = 0;
-    const replaceFumc = function() {
+    const replaceFunc = function() {
         randomText.innerHTML = textList[orderNum]; 
         if (orderNum == textList.length - 1) {
             orderNum = 0;
