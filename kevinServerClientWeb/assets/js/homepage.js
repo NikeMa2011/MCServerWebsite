@@ -92,8 +92,8 @@ function unFreezeThatBro() {
         }
     }
     randomText.addEventListener("click", function() {
-        replaceFumc();
+        replaceFunc();
     });
-    replaceFumc();
+    replaceFunc();
 }
 iconTagReplace();
