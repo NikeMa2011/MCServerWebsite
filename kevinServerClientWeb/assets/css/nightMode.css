@@ -4,6 +4,12 @@ body {
 body p, li, a, th, s, .subTitle, .title, .notes {
     color: #ffffff;
 }
+body a {
+    color: rgba(25, 106, 255, 0.8);
+}
+body a:hover{
+    color: rgba(25, 106, 255, 0.75);
+}
 body code {
     color: #ffffff;
     background-color: #252525;
