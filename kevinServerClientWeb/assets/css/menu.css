@@ -26,15 +26,22 @@
     left: 3rem;
     float: right;
 }
-#menuMain {
+#menuMain, #context {
+    float: left;
     padding: 1rem;
     background: var(--bg-color-code);
     border-radius: 0.5rem;  
     background-color: var(--bg-color-code);
-    width: 20vw;
     height: calc(100vh - 10rem);
 }
+#menuMain {
+    width: 20vw;
+}
+#context {
+    width: calc(70vw - 5rem);
+}
 #gap {
-    height: 100vh;
-    width: 1rem;
+    float: left;
+    height: 90vh;
+    width: 5rem;
 }
