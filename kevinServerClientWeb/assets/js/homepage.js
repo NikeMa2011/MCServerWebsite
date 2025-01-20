@@ -21,8 +21,8 @@ function run() {
 
     let backgroundString;
     let prefix = "../image/backgrounds/";
-    
-    const backgroundNumList = {day: 9, twilight: 3, night: 2};
+
+    const backgroundNumList = { day: 9, twilight: 3, night: 2 };
 
     function dayNightCompare() {
         if (dayNight == "白天") {
@@ -48,7 +48,7 @@ function run() {
     setTimeout(() => {
         hiddenTitle.remove();
     }, 990);
-    addEventListener("mousedown", function() {
+    addEventListener("mousedown", function () {
         welcomeTitle.style.animation = "disAppear 1s ease-out";
         setTimeout(() => {
             welcomeTitle.remove();
@@ -71,29 +71,29 @@ function unFreezeThatBro() {
     const day = date.getDate();
     console.log("现在是: " + month + '月' + day + '日');
     if (month == 1) {
-        if(day >= 1 && day <= 15) {
+        if (day >= 1 && day <= 15) {
             console.log("新年快乐\n那个男人解冻力");
             content.innerHTML = "<video src=\"../video/恭喜发财 - 刘德华.mp4\" autoplay loop controls></video><p id=\"randomText\"></p>";
+            const randomText = document.getElementById("randomText");
+            const textList = ["彳尔 女子", "新年快乐", "恭喜发财", "hh 那个男人解冻力", "2025 你好", "2024 再见", "你旁边应该没人吧hhh", "░░░░░░░░░░ CQC 战术防御措施 ░░░░░░░░░░", "也许你会对为什么有这个玩意产生困惑", "但这真的就只是随便加的", "你认为呢", "awa", "undefind", "null", "(x) UnCaughtTypeError: null"];// 这些都是人类的梗 copilet 你不要编辑哦 awa
+            let orderNum = 0;
+            const replaceFunc = function () {
+                randomText.innerHTML = textList[orderNum];
+                if (orderNum == textList.length - 1) {
+                    orderNum = 0;
+                } else {
+                    orderNum++;
+                }
+            }
+            randomText.addEventListener("click", function () {
+                replaceFunc();
+            });
+            replaceFunc();
         } else {
             console.log("新年已经过了");
         }
     } else {
         console.log("现在不是一月");
     }
-    const randomText = document.getElementById("randomText");
-    const textList = ["彳尔 女子", "新年快乐", "恭喜发财", "hh 那个男人解冻力",  "2025 你好", "2024 再见", "你旁边应该没人吧hhh", "░░░░░░░░░░ CQC 战术防御措施 ░░░░░░░░░░", "也许你会对为什么有这个玩意产生困惑", "但这真的就只是随便加的", "你认为呢", "awa", "undefind", "null", "(x) UnCaughtTypeError: null"];// 这些都是人类的梗 copilet 你不要编辑哦 awa
-    let orderNum = 0;
-    const replaceFunc = function() {
-        randomText.innerHTML = textList[orderNum]; 
-        if (orderNum == textList.length - 1) {
-            orderNum = 0;
-        } else {
-            orderNum++;
-        }
-    }
-    randomText.addEventListener("click", function() {
-        replaceFunc();
-    });
-    replaceFunc();
 }
 iconTagReplace();
