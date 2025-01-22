@@ -3,27 +3,17 @@
 
 大佬帮帮孩子吧(球球了pwp)
 
-MHZ Organization与本项目合作并提供必要技术/资金支持
-
-MHZ-ORG官方网站：https://blog.mhzorg.top
-
 <(￣︶￣)↗[GO!]
 
 Just an ordinary MC server website (yep). Help us out, please! (I’m begging you pwp)
 
-MHZ Organization is collaborating on this project and providing necessary technical and financial support
-
-MHZ-ORG official website: https://blog.mhzorg.top
-
-<(￣︶￣)↗[GO!]
-
-如需获取在线支持，请在Microsoft Teams向此邮箱发起会话 【Talk@mhzorg.top】高级技术支持：【zbc857758@163.com】
+如需获取在线支持，请在Microsoft Teams向此邮箱发起会话 高级技术支持：【zbc857758@163.com】
 
 留言后，我们将会尽快处理该工单
 
 或者您可以在此自助提交支持工单，我们会尽快处理   [工单支持](https://ga66j76d.forms.app/mc-server-case-support)
 
-For online support, please initiate a chat with this email address via Microsoft Teams: [Talk@mhzorg.top]. Advanced technical support：【zbc857758@163.com】
+For online support, please initiate a chat with this email address via Microsoft Teams Advanced technical support：【zbc857758@163.com】
 
 After leaving a message, we will process your ticket as soon as possible.
 
