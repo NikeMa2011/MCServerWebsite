@@ -98,7 +98,6 @@ Notice: the server will be officially opened soon
 如果您对本协议或隐私保护措施有任何疑问或建议，欢迎通过以下方式与我们联系：
 
 - **邮箱**: zbc857758@163.com
-- **邮箱**: Talk@mhzorg.top
 
 **最后更新日期**: 2024年11月19日
 
@@ -160,7 +159,6 @@ We may update this Policy from time to time. In the event of significant updates
 If you have any questions or suggestions regarding this Policy or our privacy protection measures, please contact us through the following methods:
 
 - **Email**: zbc857758@163.com
-- **Email**: Talk@mhzorg.top
 
 **Last Updated**: November 19, 2024
 
@@ -222,7 +220,6 @@ Podemos actualizar esta Política ocasionalmente. En caso de actualizaciones sig
 Si tiene alguna pregunta o sugerencia sobre esta Política o nuestras medidas de protección de privacidad, por favor contáctenos a través de los siguientes métodos:
 
 - **Correo Electrónico**: zbc857758@163.com
-- **Correo Electrónico**: Talk@mhzorg.top
 
 **Fecha de Última Actualización**: 19 de noviembre de 2024
 
@@ -284,7 +281,6 @@ Nous pouvons mettre à jour cette Politique de temps à autre. En cas de mises �
 Si vous avez des questions ou des suggestions concernant cette Politique ou nos mesures de protection de la vie privée, veuillez nous contacter par les moyens suivants :
 
 - **E-mail**: zbc857758@163.com
-- **E-mail**: Talk@mhzorg.top
 
 **Date de Dernière Mise à Jour**: 19 novembre 2024
 
@@ -342,7 +338,6 @@ Wir können diese Richtlinie von Zeit zu Zeit aktualisieren. Bei wesentlichen Ak
 Wenn Sie Fragen oder Vorschläge zu dieser Richtlinie oder unseren Datenschutzmaßnahmen haben, kontaktieren Sie uns bitte über die folgenden Methoden:
 
 - **E-Mail**: zbc857758@163.com
-- **E-Mail**: Talk@mhzorg.top
 
 **Letztes Aktualisierungsdatum**: 19. November 2024
 
@@ -404,7 +399,6 @@ Wenn Sie Fragen oder Vorschläge zu dieser Richtlinie oder unseren Datenschutzma
 Если у вас есть какие-либо вопросы или предложения относительно этой Политики или наших мер защиты конфиденциальности, пожалуйста, свяжитесь с нами следующими способами:
 
 - **Электронная Почта**: zbc857758@163.com
-- **Электронная Почта**: Talk@mhzorg.top
 
 **Дата Последнего Обновления**: 19 ноября 2024 г.
 
@@ -462,7 +456,6 @@ MISのMinecraftサーバー（以下「サーバー」といいます）をご�
 本ポリシーまたはプライバシー保護措置に関するご質問やご提案がある場合は、以下の方法でご連絡ください：
 
 - **メールアドレス**: zbc857758@163.com
-- **メールアドレス**: Talk@mhzorg.top
 
 **最終更新日**: 19年11月2024日
 
@@ -524,7 +517,6 @@ MIS의 Minecraft 서버(이하 "서버")를 이용해 주셔서 감사합니다.
 본 방침 또는 개인정보 보호 조치에 대해 질문이나 제안이 있으시면, 다음 방법을 통해 저희에게 연락해 주십시오:
 
 - **이메일**: zbc857758@163.com
-- **이메일**: Talk@mhzorg.top
 
 **최종 업데이트 날짜**: 19년 11월 2024일
 
@@ -586,7 +578,6 @@ MIS의 Minecraft 서버(이하 "서버")를 이용해 주셔서 감사합니다.
 إذا كان لديك أي أسئلة أو اقتراحات بخصوص هذه السياسة أو تدابير حماية الخصوصية الخاصة بنا، يرجى الاتصال بنا من خلال الطرق التالية:
 
 - **البريد الإلكتروني**: zbc857758@163.com
-- **البريد الإلكتروني**: Talk@mhzorg.top
 
 **تاريخ آخر تحديث**: 19 نوفمبر 2024
 
@@ -648,7 +639,6 @@ Podemos atualizar esta Política periodicamente. Em caso de atualizações signi
 Se você tiver quaisquer dúvidas ou sugestões sobre esta Política ou nossas medidas de proteção de privacidade, sinta-se à vontade para nos contatar através dos seguintes meios:
 
 - **E-mail**: zbc857758@163.com
-- **E-mail**: Talk@mhzorg.top
 
 **Data da Última Atualização**: 19 de novembro de 2024
 
