@@ -32,16 +32,16 @@
     background: var(--bg-color-code);
     border-radius: 0.5rem;  
     background-color: var(--bg-color-code);
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 6vh);
 }
 #menuMain {
     width: 20vw;
 }
 #context {
-    width: calc(70vw - 5rem);
+    width: 60vw;
 }
 #gap {
     float: left;
     height: 90vh;
-    width: 5rem;
+    width: 3vw;
 }
